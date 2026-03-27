@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sean Bandigan — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Bandigan_Portfolio.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">S.E.B</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#education" onclick="toggleMenu()">Education</a>
+  <a href="#skills" onclick="toggleMenu()">Skills</a>
+  <a href="#projects" onclick="toggleMenu()">Projects</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text reveal">
+    <h1 class="hero-name">
+      SEAN EZRIEL<br>
+      <span class="line-2">BANDIGAN</span>
+    </h1>
+    <p class="hero-desc">
+      An Information Technology student at Ateneo de Davao University, driven by a passion for UI/UX design, visual storytelling, and crafting impactful digital experiences.
+    </p>
+    <div class="hero-socials">
+      <a href="https://linkedin.com/in/" target="_blank" class="social-btn" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://github.com/" target="_blank" class="social-btn" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://facebook.com/" target="_blank" class="social-btn" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://instagram.com/" target="_blank" class="social-btn" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+      <a href="mailto:youremail@gmail.com" class="social-btn" aria-label="Gmail">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.910 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+      </a>
+    </div>
+
+    <a href="#projects" class="hero-cta">View Projects <span class="arrow">→</span></a>
+  </div>
+  <div class="hero-photo-wrap">
+    <img src="SeanPortfolio.jpg" alt="Sean Bandigan" class="hero-photo" />
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<div class="about-strip">
+  <p>Ateneo de Davao University</p>
+  <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  <p>BS Information Technology</p>
+  <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  <p>2024 — Present</p>
+  <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  <p>Davao, Philippines</p>
+</div>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-left reveal">
+      <span class="section-label">Who I Am</span>
+      <h2 class="big-heading">ABOUT<br><span>ME</span></h2>
+      <span class="about-tagline">Designer · Creator · Data Analysis</span>
+    </div>
+    <div class="about-right reveal">
+      <p class="about-para placeholder">
+       Hello! I'm Sean Bandigan. People often spell or pronounce my name in different ways—Siyan, Shaun, Seen—but it's simply Sean. I'm a 20-year-old Information Technology student at Ateneo de Davao University. 
+       While many IT students focus heavily on programming and technical development, my interests take a different direction. My passion has always been rooted in multimedia, creativity, and visual expression. 
+       Even though I chose Information Technology as my degree, I've always been drawn to the world of design—especially UI/UX, digital media, and visual storytelling. 
+       <br>
+       <br> Instead of pursuing a formal degree in multimedia, I decided to take a more flexible path, building my creative skills independently alongside my IT studies.
+       Through personal projects, self-learning, and continuous exploration, I've been developing a skill set that blends both technology and creativity. 
+       I enjoy creating digital experiences that are not only functional but also meaningful and visually engaging. 
+       For me, it's not just about writing code—it's about using technology as a tool to design, communicate, and bring ideas to life.
+      </p>
+      <div class="about-divider">
+        <div class="about-divider-line"></div>
+        <div class="about-divider-dot"></div>
+        <div class="about-divider-line"></div>
+      </div>
+      <div class="about-facts">
+        <div class="about-fact">
+          <div class="fact-label">Based In</div>
+          <div class="fact-value">Davao, PH</div>
+        </div>
+        <div class="about-fact">
+          <div class="fact-label">Status</div>
+          <div class="fact-value">2nd Year Student</div>
+        </div>
+        <div class="about-fact">
+          <div class="fact-label">Program</div>
+          <div class="fact-value">BS Information Technology</div>
+        </div>
+        <div class="about-fact">
+          <div class="fact-label">Open To</div>
+          <div class="fact-value">Freelancing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+  <div class="edu-header reveal">
+    <h2 class="big-heading edu-title">EDUCATION</h2>
+    <p class="edu-intro">
+      Grounded in STEM and Information Technology, with a growing skill set that blends design, technology, and data into cohesive solutions.
+    </p>
+  </div>
+  <div class="edu-grid reveal">
+    <div class="edu-card">
+      <div class="edu-school">Lyceum of the Philippines — Davao</div>
+      <div class="edu-year">2022 — 2024</div>
+      <div class="edu-degree">Science, Technology, Engineering & Mathematics (STEM)<br>With Honors</div>
+      <span class="edu-status">Completed</span>
+    </div>
+    <div class="edu-card">
+      <div class="edu-school">Ateneo de Davao University</div>
+      <div class="edu-year">2024 — Present</div>
+      <div class="edu-degree">Bachelor of Science in Information Technology</div>
+      <span class="edu-status">Ongoing</span>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+  <div class="skills-layout">
+    <div class="skills-left reveal">
+      <h2 class="big-heading">SKILLS</h2>
+      <p class="skills-desc" style="margin-top:16px;">
+        A combination of design, technical, and creative skills gained through coursework, personal work, and continuous learning.
+      </p>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-card">
+        <div class="skill-icon">◈</div>
+        <div class="skill-name">UI / UX Design</div>
+        <div class="skill-desc">Making simple layouts and mockups, testing how things work, and designing interfaces that are easy to use and look visually appealing.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">▶</div>
+        <div class="skill-name">Video Editing</div>
+        <div class="skill-desc">Storytelling through motion — cutting, color grading, and compositing for impactful visuals.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⌖</div>
+        <div class="skill-name">Photography</div>
+        <div class="skill-desc">Capturing meaningful moments by carefully using angles, lighting, and storytelling in every photo.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">◎</div>
+        <div class="skill-name">Data Analysis</div>
+        <div class="skill-desc">Making sense of data by organizing it, analyzing it, and turning it into clear visuals and useful insights.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section" id="projects">
+  <div class="projects-header reveal">
+    <h2 class="big-heading">PRO<span>JECTS</span></h2>
+    <span class="proj-count">02 Works</span>
+  </div>
+  <div class="projects-list reveal">
+
+    <div class="project-item">
+      <div class="proj-num">01</div>
+      <div class="proj-info">
+        <div class="proj-title">SebCash</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Finance</span>
+          <span class="proj-tag">UI/UX</span>
+          <span class="proj-tag">Mobile Application</span>
+        </div>
+        <p class="proj-desc">A collaborative project where the goal is to build a personal finance management mobile application designed to help users track expenses with a built-in app currency converter, set budgets, and gain clarity over their financial health through clean, intuitive dashboards.</p>
+      </div>
+      <div class="proj-arrow">→</div>
+    </div>
+
+    <div class="project-item">
+      <div class="proj-num">02</div>
+      <div class="proj-info">
+        <div class="proj-title">Melodiary</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Music</span>
+          <span class="proj-tag">Journaling</span>
+          <span class="proj-tag">Website</span>
+        </div>
+        <p class="proj-desc">A music diary website where users log songs tied to memories and moods, creating a personal soundtrack journal. Combines music discovery with reflective, expressive writing.</p>
+      </div>
+      <div class="proj-arrow">→</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="reveal">
+    <span class="section-label" style="color:var(--olive-light)">Get In Touch</span>
+    <h2 class="big-heading contact-title">CON<span>TACT</span></h2>
+    <p class="contact-sub">Contact me in these social media platforms to arrange creative projects.</p>
+    <div class="hero-socials" style="margin-top:24px;">
+      <a href="https://linkedin.com/in/" target="_blank" class="social-btn" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://github.com/" target="_blank" class="social-btn" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://facebook.com/" target="_blank" class="social-btn" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://instagram.com/" target="_blank" class="social-btn" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+      <a href="mailto:youremail@gmail.com" class="social-btn" aria-label="Gmail">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.910 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="contact-right reveal">
+    <div class="contact-item">
+      <span class="contact-item-label">University</span>
+      <span class="contact-item-value">Ateneo de Davao University</span>
+    </div>
+    <div class="contact-item">
+      <span class="contact-item-label">Program</span>
+      <span class="contact-item-value">BS Information Technology</span>
+    </div>
+    <div class="contact-item">
+      <span class="contact-item-label">Location</span>
+      <span class="contact-item-value">Davao, Philippines</span>
+    </div>
+    <div class="contact-item" style="border:none;">
+      <span class="contact-item-label">Status</span>
+      <span class="contact-item-value" style="color:var(--olive-light)">Available for Freelancing jobs</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Sean Bandigan — All Rights Reserved</p>
+  <p>BS Information Technology · Ateneo de Davao University</p>
+</footer>
+
+<script>
+  // Mobile menu
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Trigger hero immediately
+  document.querySelectorAll('.hero .reveal').forEach(el => {
+    setTimeout(() => el.classList.add('visible'), 200);
+  });
+</script>
+</body>
+</html>
